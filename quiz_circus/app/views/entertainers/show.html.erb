@@ -1,1 +1,13 @@
 <%= @entertainer.name %>
+
+<ul>
+<% @response.each do |key, val| %>
+	<% if  != "Circus" && key != "Entertainer" %>
+	<li><%= "#{key}: #{val}" %></li>
+	<%end%>
+<%end%>
+</ul>
+
+
+
+<img src= <%=@response["Poster"]%> >

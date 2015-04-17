@@ -4,6 +4,8 @@ class CircusesController < ApplicationController
   end
 
   def show
+    name = params[:circus]
+    redirect_to @circus
 
   end
 
